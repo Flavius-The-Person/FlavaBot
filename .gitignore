@@ -36,3 +36,4 @@ hs_err_pid*
 !/src/main/java/com/flavcreations/flavabot/secrets/
 !/src/main/java/com/flavcreations/flavabot/secrets/botsecrets.java
 !/src/main/java/com/flavcreations/flavabot/secrets/
+src/main/java/com/flavcreations/flavabot/secrets/botsecrets.java
