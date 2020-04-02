@@ -128,7 +128,14 @@ public class Bot {
 		twitchClient.getChat().joinChannel(channel);
 		System.out.println("connected to: " + channel);
 		String input = scan.nextLine();
-		twitchClient.getChat().sendMessage(channel,input);
+		//twitchClient.getChat().sendMessage(channel, input);
+		
+		while(input != "exitBot")
+		{
+			twitchClient.getChat().sendMessage(channel, input);
+			input = scan.nextLine();
+		}
+		
 		//if(twitchClient.getChat().getEventManager().getEventHandler(ChannelMessageEvent evemt))
 		{
 		
