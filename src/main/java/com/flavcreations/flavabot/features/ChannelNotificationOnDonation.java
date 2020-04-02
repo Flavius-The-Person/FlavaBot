@@ -14,6 +14,7 @@ public class ChannelNotificationOnDonation {
 	 */
 	
 	public ChannelNotificationOnDonation(EventManager eventManager) {
+		
 		//eventManager.onEvent(DonationEvent.class).subscribe(event -> onDonation(event));
 	}
 	
