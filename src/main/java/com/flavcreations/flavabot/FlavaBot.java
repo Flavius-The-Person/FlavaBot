@@ -12,9 +12,9 @@ import java.util.Scanner;
 
 public class FlavaBot {
 	
-	private static botsecrets botSecrets = new botsecrets();
+	//private static botsecrets botSecrets = new botsecrets();
 	private static TwitchChat twitchChat;
-	private static final String CREDENTIAL_FILE = "credentials.yaml";
+	//private static final String CREDENTIAL_FILE = "credentials.yaml";
 //	private static final Random RANDOM = new Random();
 	
 	public static void main(String[] args)

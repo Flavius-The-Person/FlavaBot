@@ -97,8 +97,8 @@ public class Bot {
 		// register your handler class
 		
 		
-		MyEventHandler myEventHandler = new MyEventHandler();
-		twitchClient.getEventManager().getEventHandler(SimpleEventHandler.class).registerListener(myEventHandler);
+		
+		twitchClient.getEventManager().getEventHandler(SimpleEventHandler.class).registerListener(new MyEventHandler());//myEventHandler);
 		
 	}
 	
@@ -136,11 +136,12 @@ public class Bot {
 			input = scan.nextLine();
 		}
 		
-		//if(twitchClient.getChat().getEventManager().getEventHandler(ChannelMessageEvent evemt))
+		/*if(twitchClient.getChat().getEventManager().getEventHandler(ChannelMessageEvent evemt))
 		{
 		
 		
-		}
+		}*/
+		
 		/*
 		// Connect to all channels
 		for (String channel : configuration.getChannels()) {
