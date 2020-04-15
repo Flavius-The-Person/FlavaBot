@@ -31,21 +31,13 @@ public class Bot {
 	 * Constructor
 	 */
 	public Bot() {
-		// Load Configuration
-		//loadConfiguration();
 		
 		botsecrets botSecrets = new botsecrets();
 		
 		TwitchClientBuilder clientBuilder = TwitchClientBuilder.builder();
 		
-		//region Auth
-/*		OAuth2Credential credential = new OAuth2Credential(
-				"twitch",
-				configuration.getCredentials().get("irc")
-		);*/
 		OAuth2Credential credential = new OAuth2Credential(
 				"twitch", botSecrets.clientSecret);
-		//endregion
 		
 		//region TwitchClient
 		twitchClient = clientBuilder
@@ -102,24 +94,6 @@ public class Bot {
 		
 	}
 	
-	/**
-	 * Load the Configuration
-	 */
-	/*
-	private void loadConfiguration() {
-		try {
-			ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-			InputStream is = classloader.getResourceAsStream("config.yaml");
-			
-			ObjectMapper mapper = new ObjectMapper();
-			configuration = mapper.readValue(is, Configuration.class);
-		} catch (Exception ex) {
-			ex.printStackTrace();
-			System.out.println("Unable to load Configuration ... Exiting.");
-			System.exit(1);
-		}
-	}*/
-	
 	public void start() {
 		
 		Scanner scan = new Scanner(System.in);
@@ -142,11 +116,6 @@ public class Bot {
 		
 		}*/
 		
-		/*
-		// Connect to all channels
-		for (String channel : configuration.getChannels()) {
-			twitchClient.getChat().joinChannel(channel);
-		}*/
 	}
 	
 }
