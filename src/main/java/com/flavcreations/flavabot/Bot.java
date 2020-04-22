@@ -87,9 +87,6 @@ public class Bot {
 	public void registerHandlers()
 	{
 		// register your handler class
-		
-		
-		
 		twitchClient.getEventManager().getEventHandler(SimpleEventHandler.class).registerListener(new MyEventHandler());//myEventHandler);
 		
 	}
